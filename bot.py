@@ -78,7 +78,7 @@ class Music(commands.Cog):
         if not ctx.author.voice:
             return await ctx.send("You are not in a Voice Channel!",hidden=1)
         ctx.voice_client.resume()
-        await ctx.send("Resumed! \:play_button:")
+        await ctx.send("Resumed! ▶")
 
 
     @cog_ext.cog_slash(name="leave",description="Make the Bot leave your Voice channel",guild_ids=[850480795185053746,888062030890823690])
